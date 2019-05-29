@@ -117,7 +117,7 @@ if __name__ == "__main__" :
             cl = re.sub(r"\d+.\d+;.*$", "", cl)
             table_data['Location'].append(cl)
 
-            # for each city fetch it's webpage link by finding the html anchor tag
+            # for each city, fetch it's webpage link by finding the html anchor tag
             tr = table.findAll('tr')[(int)(i/11)]
             web = tr.findAll('a')[0]
             web = web.get('href')
@@ -147,7 +147,7 @@ if __name__ == "__main__" :
 
         i+=1
 
-    # load the disctinary to pandas dataframe
+    # load the dictionary to pandas dataframe
     df = pd.DataFrame(table_data)
     # print the contents of data frame if required
     #print(df)
