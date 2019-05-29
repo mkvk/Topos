@@ -3,6 +3,10 @@
 """
 This Python code is used to scrape the wiki website of most populous cities and
 add extra information from each other wiki webpages of most populous cities.
+
+Requisites : This project requires python 3 environment with "requests" "BeautifulSoup4" and "pandas" libraries pre-installed. 
+If not, they maybe be installed via "pip install requests BeautifulSoup4 pandas".
+
 Author : Murali Kammili
 """
 
